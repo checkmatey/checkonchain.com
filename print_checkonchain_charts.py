@@ -17,3 +17,13 @@ import checkonchain.xmronchain.xmr_charts
 os.chdir(os.path.dirname(__file__)) #reset dir to this file
 os.chdir('../dcronchain/charts')
 import checkonchain.dcronchain.charts.chart_dcr_unforgeablecostliness
+
+#Print Research Paper Charts
+os.chdir(os.path.dirname(__file__)) #reset dir to this file
+os.chdir('../dcronchain/charts')
+import checkonchain.dcronchain.charts.chart_dcr_useradoption
+
+
+
+
+print('CHECKONCHAIN CHART PRODUCTION COMPLETE!')
