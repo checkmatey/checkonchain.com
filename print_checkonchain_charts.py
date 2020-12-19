@@ -1,4 +1,5 @@
 import os
+os.chdir(os.path.dirname(__file__)) #reset dir to this file
 os.chdir('../dcronchain/charts')
 import checkonchain.dcronchain.charts.dcr_charts_plotting
 
