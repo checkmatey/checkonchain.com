@@ -25,6 +25,4 @@ os.chdir('../dcronchain/charts')
 import checkonchain.dcronchain.charts.chart_dcr_useradoption
 
 
-
-
 print('CHECKONCHAIN CHART PRODUCTION COMPLETE!')
