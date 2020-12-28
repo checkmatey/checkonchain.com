@@ -1,3 +1,7 @@
+#Print Public Charts    = 1
+#Print Private charts   = 0
+public  = 0
+
 import os
 os.chdir(os.path.dirname(__file__)) #reset dir to this file
 os.chdir('../dcronchain/charts')
