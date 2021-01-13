@@ -19,9 +19,36 @@
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="webassets/css/custom.css">
 
+        <!-- Website Analytics -->
+        <script type='text/javascript'>
+          //some default pre init
+          var Countly = Countly || {};
+          Countly.q = Countly.q || [];
+          
+          //provide countly initialization parameters
+          Countly.app_key = '30332facb3e31918d28b4a70d6f21296e5dd8e8c';
+          Countly.url = 'https://analytics.withdecred.org';
+          
+          Countly.q.push(['track_sessions']);
+          Countly.q.push(['track_pageview']);
+          Countly.q.push(['track_clicks']);
+          
+          //load countly script asynchronously
+          (function() {
+             var cly = document.createElement('script'); cly.type = 'text/javascript';
+             cly.async = true;
+             //enter url of script here
+             cly.src = 'https://cdn.jsdelivr.net/npm/countly-sdk-web@latest/lib/countly.min.js';
+             cly.onload = function(){Countly.init()};
+             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(cly, s);
+          })();
+          </script>
+
     
     </head>
     <body>
+      <!-- Website Analytics -->
+      <noscript><img src='https://analytics.withdecred.org/pixel.png?app_key=30332facb3e31918d28b4a70d6f21296e5dd8e8c&begin_session=1'/></noscript>
       
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <a class="navbar-brand" href="index.html">
@@ -36,57 +63,57 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">BTC: Magic Lines</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown01">
-                      <a class="dropdown-item" href="btconchain/mayermultiple_pricing_usd/mayermultiple_pricing_usd_light.html">Mayer Multiple</a>
-                      <a class="dropdown-item" href="btconchain/magiclinesrecent_pricing_usd/magiclinesrecent_pricing_usd_light.html">Magic Lines (Recent)</a>
-                      <a class="dropdown-item" href="btconchain/magiclinesfull_pricing_usd/magiclinesfull_pricing_usd_light.html">Magic Lines (Full History)</a>
-                      <a class="dropdown-item" href="btconchain/investortool_pricing_usd/investortool_pricing_usd_light.html">Investor Tool</a>
-                      <a class="dropdown-item" href="btconchain/histogram_probability/histogram_probability_light.html">Probability Histograms</a>
-                      <a class="dropdown-item" href="btconchain/s2fmodel_valuation_usd/s2fmodel_valuation_usd_light.html">S2F Models (Valuation)</a>
-                      <a class="dropdown-item" href="btconchain/s2fmodel_pricing_usd/s2fmodel_pricing_usd_light.html">S2F Models (Pricing)</a>
+                      <a class="dropdown-item" target="_blank" href="btconchain/mayermultiple_pricing_usd/mayermultiple_pricing_usd_light.html">Mayer Multiple</a>
+                      <a class="dropdown-item" target="_blank" href="btconchain/magiclinesrecent_pricing_usd/magiclinesrecent_pricing_usd_light.html">Magic Lines (Recent)</a>
+                      <a class="dropdown-item" target="_blank" href="btconchain/magiclinesfull_pricing_usd/magiclinesfull_pricing_usd_light.html">Magic Lines (Full History)</a>
+                      <a class="dropdown-item" target="_blank" href="btconchain/investortool_pricing_usd/investortool_pricing_usd_light.html">Investor Tool</a>
+                      <a class="dropdown-item" target="_blank" href="btconchain/histogram_probability/histogram_probability_light.html">Probability Histograms</a>
+                      <a class="dropdown-item" target="_blank" href="btconchain/s2fmodel_valuation_usd/s2fmodel_valuation_usd_light.html">S2F Models (Valuation)</a>
+                      <a class="dropdown-item" target="_blank" href="btconchain/s2fmodel_pricing_usd/s2fmodel_pricing_usd_light.html">S2F Models (Pricing)</a>
                     </div>
                 </li>
 
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">BTC: Realised Value</a>
                   <div class="dropdown-menu" aria-labelledby="dropdown02">
-                    <a class="dropdown-item" href="btconchain/mvrv_valuation_usd/mvrv_valuation_usd_light.html">MVRV Ratio (Valuation)</a>
-                    <a class="dropdown-item" href="btconchain/mvrv_pricing_usd/mvrv_pricing_usd_light.html">MVRV Ratio (Pricing)</a>
-                    <a class="dropdown-item" href="btconchain/unrealisedpnl_pricing_usd/unrealisedpnl_pricing_usd_light.html">Unrealised PnL</a>
-                    <a class="dropdown-item" href="btconchain/mrktrealgrad14day_oscillator_usd/mrktrealgrad14day_oscillator_usd_light.html">Market Gradient Oscillator (14-day)</a>
-                    <a class="dropdown-item" href="btconchain/mrktrealgrad140day_oscillator_usd/mrktrealgrad140day_oscillator_usd_light.html">Market Gradient Oscillator (140-day)</a>
+                    <a class="dropdown-item" target="_blank" href="btconchain/mvrv_valuation_usd/mvrv_valuation_usd_light.html">MVRV Ratio (Valuation)</a>
+                    <a class="dropdown-item" target="_blank" href="btconchain/mvrv_pricing_usd/mvrv_pricing_usd_light.html">MVRV Ratio (Pricing)</a>
+                    <a class="dropdown-item" target="_blank" href="btconchain/unrealisedpnl_pricing_usd/unrealisedpnl_pricing_usd_light.html">Unrealised PnL</a>
+                    <a class="dropdown-item" target="_blank" href="btconchain/mrktrealgrad14day_oscillator_usd/mrktrealgrad14day_oscillator_usd_light.html">Market Gradient Oscillator (14-day)</a>
+                    <a class="dropdown-item" target="_blank" href="btconchain/mrktrealgrad140day_oscillator_usd/mrktrealgrad140day_oscillator_usd_light.html">Market Gradient Oscillator (140-day)</a>
                   </div>
                 </li>
 
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">BTC: Mining</a>
                   <div class="dropdown-menu" aria-labelledby="dropdown02">
-                    <a class="dropdown-item" href="btconchain/diffribbon_valuation_usd/diffribbon_valuation_usd_light.html">Difficulty Ribbon (Valuation)</a>
-                    <a class="dropdown-item" href="btconchain/diffribbon_pricing_usd/diffribbon_pricing_usd_light.html">Difficulty Ribbon (Pricing)</a>
-                    <a class="dropdown-item" href="btconchain/blocksubsidy_valuation_usd/blocksubsidy_valuation_usd_light.html">Block Subsidy Model (Valuation)</a>
-                    <a class="dropdown-item" href="btconchain/blocksubsidy_pricing_usd/blocksubsidy_pricing_usd_light.html">Block Subsidy Model (Pricing)</a>
-                    <a class="dropdown-item" href="btconchain/puellmultiple_oscillator_usd/puellmultiple_oscillator_usd_light.html">Puell Multiple</a>
-                    <a class="dropdown-item" href="btconchain/miningpulse_oscillator_usd/miningpulse_oscillator_usd_light.html">Mining Pulse</a>
+                    <a class="dropdown-item" target="_blank" href="btconchain/diffribbon_valuation_usd/diffribbon_valuation_usd_light.html">Difficulty Ribbon (Valuation)</a>
+                    <a class="dropdown-item" target="_blank" href="btconchain/diffribbon_pricing_usd/diffribbon_pricing_usd_light.html">Difficulty Ribbon (Pricing)</a>
+                    <a class="dropdown-item" target="_blank" href="btconchain/blocksubsidy_valuation_usd/blocksubsidy_valuation_usd_light.html">Block Subsidy Model (Valuation)</a>
+                    <a class="dropdown-item" target="_blank" href="btconchain/blocksubsidy_pricing_usd/blocksubsidy_pricing_usd_light.html">Block Subsidy Model (Pricing)</a>
+                    <a class="dropdown-item" target="_blank" href="btconchain/puellmultiple_oscillator_usd/puellmultiple_oscillator_usd_light.html">Puell Multiple</a>
+                    <a class="dropdown-item" target="_blank" href="btconchain/miningpulse_oscillator_usd/miningpulse_oscillator_usd_light.html">Mining Pulse</a>
                   </div>
                 </li>
 
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">BTC: Performance</a>
                   <div class="dropdown-menu" aria-labelledby="dropdown02">
-                    <a class="dropdown-item" href="btconchain/nvtrvt_pricing_usd/nvtrvt_pricing_usd_light.html">NVT + RVT Ratio</a>
-                    <a class="dropdown-item" href="btconchain/nvtrvtffadj_pricing_usd/nvtrvtffadj_pricing_usd_light.html">NVT + RVT Free Float Adj.</a>
-                    <a class="dropdown-item" href="btconchain/valueperbyte_performance_usd/valueperbyte_performance_usd_light.html">Value Stored per byte</a>
-                    <a class="dropdown-item" href="btconchain/metcalfmodel_valuation_usd/metcalfmodel_valuation_usd_light.html">Metcalf Models (Valuation)</a>
-                    <a class="dropdown-item" href="btconchain/metcalfmodel_pricing_usd/metcalfmodel_pricing_usd_light.html">Metcalf Models (Pricing)</a>
+                    <a class="dropdown-item" target="_blank" href="btconchain/nvtrvt_pricing_usd/nvtrvt_pricing_usd_light.html">NVT + RVT Ratio</a>
+                    <a class="dropdown-item" target="_blank" href="btconchain/nvtrvtffadj_pricing_usd/nvtrvtffadj_pricing_usd_light.html">NVT + RVT Free Float Adj.</a>
+                    <a class="dropdown-item" target="_blank" href="btconchain/valueperbyte_performance_usd/valueperbyte_performance_usd_light.html">Value Stored per byte</a>
+                    <a class="dropdown-item" target="_blank" href="btconchain/metcalfmodel_valuation_usd/metcalfmodel_valuation_usd_light.html">Metcalf Models (Valuation)</a>
+                    <a class="dropdown-item" target="_blank" href="btconchain/metcalfmodel_pricing_usd/metcalfmodel_pricing_usd_light.html">Metcalf Models (Pricing)</a>
                   </div>
                 </li>
 
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">BTC: Cycles</a>
                   <div class="dropdown-menu" aria-labelledby="dropdown02">
-                    <a class="dropdown-item" href="btconchain/cycle_btm/cycle_btm_light.html">Growth since Bottom</a>
-                    <a class="dropdown-item" href="btconchain/cycle_top/cycle_top_light.html">Growth since Top</a>
-                    <a class="dropdown-item" href="btconchain/cycle_halving/cycle_halving_light.html">Growth since Halving</a>
-                    <a class="dropdown-item" href="btconchain/cycle_bullbearsats/cycle_bullbearsats_light.html">Golden Cross + Sats/$</a>
+                    <a class="dropdown-item" target="_blank" href="btconchain/cycle_btm/cycle_btm_light.html">Growth since Bottom</a>
+                    <a class="dropdown-item" target="_blank" href="btconchain/cycle_top/cycle_top_light.html">Growth since Top</a>
+                    <a class="dropdown-item" target="_blank" href="btconchain/cycle_halving/cycle_halving_light.html">Growth since Halving</a>
+                    <a class="dropdown-item" target="_blank" href="btconchain/cycle_bullbearsats/cycle_bullbearsats_light.html">Golden Cross + Sats/$</a>
                   </div>
                 </li>
 
@@ -94,80 +121,80 @@
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DCR: Fair Value</a>
                   <div class="dropdown-menu" aria-labelledby="dropdown02">
-                    <a class="dropdown-item" href="dcronchain/mayermultiple_pricing_usd/mayermultiple_pricing_usd_light.html">Mayer Multiple</a>
-                    <a class="dropdown-item" href="dcronchain/s2fmodel_valuation_usd/s2fmodel_valuation_usd_light.html">S2F Model (Valuation)</a>
-                    <a class="dropdown-item" href="dcronchain/s2fmodel_pricing_usd/s2fmodel_pricing_usd_light.html">S2F Model (Pricing)</a>
-                    <a class="dropdown-item" href="dcronchain/s2fresiduals_oscillator_usd/s2fresiduals_oscillator_usd_light.html">S2F Residuals Oscillator</a>
-                    <a class="dropdown-item" href="dcronchain/histogram_probability_oscillators/histogram_probability_oscillators_light.html">Probability Histograms (Oscillators)</a>
+                    <a class="dropdown-item" target="_blank" href="dcronchain/mayermultiple_pricing_usd/mayermultiple_pricing_usd_light.html">Mayer Multiple</a>
+                    <a class="dropdown-item" target="_blank" href="dcronchain/s2fmodel_valuation_usd/s2fmodel_valuation_usd_light.html">S2F Model (Valuation)</a>
+                    <a class="dropdown-item" target="_blank" href="dcronchain/s2fmodel_pricing_usd/s2fmodel_pricing_usd_light.html">S2F Model (Pricing)</a>
+                    <a class="dropdown-item" target="_blank" href="dcronchain/s2fresiduals_oscillator_usd/s2fresiduals_oscillator_usd_light.html">S2F Residuals Oscillator</a>
+                    <a class="dropdown-item" target="_blank" href="dcronchain/histogram_probability_oscillators/histogram_probability_oscillators_light.html">Probability Histograms (Oscillators)</a>
                   </div>
                 </li>
 
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DCR: Block Subsidy</a>
                   <div class="dropdown-menu" aria-labelledby="dropdown02">
-                    <a class="dropdown-item" href="dcronchain/blocksubsidy_valuation_usd/blocksubsidy_valuation_usd_light.html">USD Block Subsidy (Valuation)</a>
-                    <a class="dropdown-item" href="dcronchain/blocksubsidy_pricing_usd/blocksubsidy_pricing_usd_light.html">USD Block Subsidy (Pricing)</a>
-                    <a class="dropdown-item" href="dcronchain/blocksubsidy_valuation_btc/blocksubsidy_valuation_btc_light.html">BTC Block Subsidy (Valuation)</a>
-                    <a class="dropdown-item" href="dcronchain/blocksubsidy_pricing_btc/blocksubsidy_pricing_btc_light.html">BTC Block Subsidy (Pricing)</a>
-                    <a class="dropdown-item" href="dcronchain/commitments_valuation_usd/commitments_valuation_usd_light.html">USD Stakeholder Commitments (Valuation)</a>
-                    <a class="dropdown-item" href="dcronchain/commitments_valuation_usd/commitments_valuation_usd_light.html">USD Stakeholder Commitments (Pricing)</a>
-                    <a class="dropdown-item" href="dcronchain/commitments_valuation_usd/commitments_valuation_usd_light.html">BTC Stakeholder Commitments (Valuation)</a>
-                    <a class="dropdown-item" href="dcronchain/commitments_valuation_usd/commitments_valuation_usd_light.html">BTC Stakeholder Commitments (Pricing)</a>
+                    <a class="dropdown-item" target="_blank" href="dcronchain/blocksubsidy_valuation_usd/blocksubsidy_valuation_usd_light.html">USD Block Subsidy (Valuation)</a>
+                    <a class="dropdown-item" target="_blank" href="dcronchain/blocksubsidy_pricing_usd/blocksubsidy_pricing_usd_light.html">USD Block Subsidy (Pricing)</a>
+                    <a class="dropdown-item" target="_blank" href="dcronchain/blocksubsidy_valuation_btc/blocksubsidy_valuation_btc_light.html">BTC Block Subsidy (Valuation)</a>
+                    <a class="dropdown-item" target="_blank" href="dcronchain/blocksubsidy_pricing_btc/blocksubsidy_pricing_btc_light.html">BTC Block Subsidy (Pricing)</a>
+                    <a class="dropdown-item" target="_blank" href="dcronchain/commitments_valuation_usd/commitments_valuation_usd_light.html">USD Stakeholder Commitments (Valuation)</a>
+                    <a class="dropdown-item" target="_blank" href="dcronchain/commitments_valuation_usd/commitments_valuation_usd_light.html">USD Stakeholder Commitments (Pricing)</a>
+                    <a class="dropdown-item" target="_blank" href="dcronchain/commitments_valuation_usd/commitments_valuation_usd_light.html">BTC Stakeholder Commitments (Valuation)</a>
+                    <a class="dropdown-item" target="_blank" href="dcronchain/commitments_valuation_usd/commitments_valuation_usd_light.html">BTC Stakeholder Commitments (Pricing)</a>
                   </div>
                 </li>
 
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DCR: Realised Value</a>
                   <div class="dropdown-menu" aria-labelledby="dropdown02">
-                    <a class="dropdown-item" href="dcronchain/mvrv_valuation_usd/mvrv_valuation_usd_light.html">USD Realised Valuation</a>
-                    <a class="dropdown-item" href="dcronchain/mvrv_pricing_usd/mvrv_pricing_usd_light.html">USD Realised Price</a>
-                    <a class="dropdown-item" href="dcronchain/mvrv_valuation_btc/mvrv_valuation_btc_light.html">BTC Realised Valuation</a>
-                    <a class="dropdown-item" href="dcronchain/mvrv_pricing_btc/mvrv_pricing_btc_light.html">BTC Realised Price</a>
-                    <a class="dropdown-item" href="dcronchain/unrealisedpnl_oscillator_usd/unrealisedpnl_oscillator_usd_light.html">Unrealised PnL</a>
-                    <a class="dropdown-item" href="dcronchain/mrktrealgrad28day_oscillator_usd/mrktrealgrad28day_oscillator_usd_light.html">Market Gradient Oscillator (28-day)</a>
-                    <a class="dropdown-item" href="dcronchain/mrktrealgrad142day_oscillator_usd/mrktrealgrad142day_oscillator_usd_light.html">Market Gradient Oscillator (142-day)</a>
+                    <a class="dropdown-item" target="_blank" href="dcronchain/mvrv_valuation_usd/mvrv_valuation_usd_light.html">USD Realised Valuation</a>
+                    <a class="dropdown-item" target="_blank" href="dcronchain/mvrv_pricing_usd/mvrv_pricing_usd_light.html">USD Realised Price</a>
+                    <a class="dropdown-item" target="_blank" href="dcronchain/mvrv_valuation_btc/mvrv_valuation_btc_light.html">BTC Realised Valuation</a>
+                    <a class="dropdown-item" target="_blank" href="dcronchain/mvrv_pricing_btc/mvrv_pricing_btc_light.html">BTC Realised Price</a>
+                    <a class="dropdown-item" target="_blank" href="dcronchain/unrealisedpnl_oscillator_usd/unrealisedpnl_oscillator_usd_light.html">Unrealised PnL</a>
+                    <a class="dropdown-item" target="_blank" href="dcronchain/mrktrealgrad28day_oscillator_usd/mrktrealgrad28day_oscillator_usd_light.html">Market Gradient Oscillator (28-day)</a>
+                    <a class="dropdown-item" target="_blank" href="dcronchain/mrktrealgrad142day_oscillator_usd/mrktrealgrad142day_oscillator_usd_light.html">Market Gradient Oscillator (142-day)</a>
                   </div>
                 </li>
 
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DCR: Mining</a>
                   <div class="dropdown-menu" aria-labelledby="dropdown02">
-                    <a class="dropdown-item" href="dcronchain/diffribbon_valuation_usd/diffribbon_valuation_usd_light.html">Difficulty Ribbon (Valuation)</a>
-                    <a class="dropdown-item" href="dcronchain/diffprice_pricing_usd/diffprice_pricing_usd_light.html">Difficulty Ribbon (Pricing)</a>
-                    <a class="dropdown-item" href="dcronchain/puellmultiple_oscillator_usd/puellmultiple_oscillator_usd_light.html">Puell Multiple</a>
-                    <a class="dropdown-item" href="dcronchain/miningpulse_oscillator_usd/miningpulse_oscillator_usd_light.html">Mining Pulse</a>
+                    <a class="dropdown-item" target="_blank" href="dcronchain/diffribbon_valuation_usd/diffribbon_valuation_usd_light.html">Difficulty Ribbon (Valuation)</a>
+                    <a class="dropdown-item" target="_blank" href="dcronchain/diffprice_pricing_usd/diffprice_pricing_usd_light.html">Difficulty Ribbon (Pricing)</a>
+                    <a class="dropdown-item" target="_blank" href="dcronchain/puellmultiple_oscillator_usd/puellmultiple_oscillator_usd_light.html">Puell Multiple</a>
+                    <a class="dropdown-item" target="_blank" href="dcronchain/miningpulse_oscillator_usd/miningpulse_oscillator_usd_light.html">Mining Pulse</a>
                   </div>
                 </li>
 
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DCR: Tickets</a>
                   <div class="dropdown-menu" aria-labelledby="dropdown02">
-                    <a class="dropdown-item" href="dcronchain/142dayticsum_pricing_usd/142dayticsum_pricing_usd_light.html">142-day Ticket Sum</a>
-                    <a class="dropdown-item" href="dcronchain/ticfundrate28day_oscillator_usd/ticfundrate28day_oscillator_usd_light.html">Ticket Funding Rate (28-day)</a>
-                    <a class="dropdown-item" href="dcronchain/ticfundrate56day_oscillator_usd/ticfundrate56day_oscillator_usd_light.html">Ticket Funding Rate (56-day)</a>
-                    <a class="dropdown-item" href="dcronchain/ticfundrate142day_oscillator_usd/ticfundrate142day_oscillator_usd_light.html">Ticket Funding Rate (142-day)</a>
-                    <a class="dropdown-item" href="dcronchain/tvwap_valuation_usd/tvwap_valuation_usd_light.html">TVWAP (Valuation)</a>
-                    <a class="dropdown-item" href="dcronchain/tvwap_pricing_usd/tvwap_pricing_usd_light.html">TVWAP (Pricing)</a>
-                    <a class="dropdown-item" href="dcronchain/hodlerconversion_oscillator_usd/hodlerconversion_oscillator_usd_light.html">Hodler Conversion Rate</a>
-                    <a class="dropdown-item" href="dcronchain/stronghand28_oscillator_usd/stronghand28_oscillator_usd_light.html">Strongest Hand (28-day)</a>
-                    <a class="dropdown-item" href="dcronchain/stronghand56_oscillator_usd/stronghand56_oscillator_usd_light.html">Strongest Hand (56-day)</a>
-                    <a class="dropdown-item" href="dcronchain/stronghand142_oscillator_usd/stronghand142_oscillator_usd_light.html">Strongest Hand (142-day)</a>
-                    <a class="dropdown-item" href="dcronchain/histogram_probability_oscillators/histogram_probability_oscillators_light.html">Probability Histograms (TVWAP)</a>
+                    <a class="dropdown-item" target="_blank" href="dcronchain/142dayticsum_pricing_usd/142dayticsum_pricing_usd_light.html">142-day Ticket Sum</a>
+                    <a class="dropdown-item" target="_blank" href="dcronchain/ticfundrate28day_oscillator_usd/ticfundrate28day_oscillator_usd_light.html">Ticket Funding Rate (28-day)</a>
+                    <a class="dropdown-item" target="_blank" href="dcronchain/ticfundrate56day_oscillator_usd/ticfundrate56day_oscillator_usd_light.html">Ticket Funding Rate (56-day)</a>
+                    <a class="dropdown-item" target="_blank" href="dcronchain/ticfundrate142day_oscillator_usd/ticfundrate142day_oscillator_usd_light.html">Ticket Funding Rate (142-day)</a>
+                    <a class="dropdown-item" target="_blank" href="dcronchain/tvwap_valuation_usd/tvwap_valuation_usd_light.html">TVWAP (Valuation)</a>
+                    <a class="dropdown-item" target="_blank" href="dcronchain/tvwap_pricing_usd/tvwap_pricing_usd_light.html">TVWAP (Pricing)</a>
+                    <a class="dropdown-item" target="_blank" href="dcronchain/hodlerconversion_oscillator_usd/hodlerconversion_oscillator_usd_light.html">Hodler Conversion Rate</a>
+                    <a class="dropdown-item" target="_blank" href="dcronchain/stronghand28_oscillator_usd/stronghand28_oscillator_usd_light.html">Strongest Hand (28-day)</a>
+                    <a class="dropdown-item" target="_blank" href="dcronchain/stronghand56_oscillator_usd/stronghand56_oscillator_usd_light.html">Strongest Hand (56-day)</a>
+                    <a class="dropdown-item" target="_blank" href="dcronchain/stronghand142_oscillator_usd/stronghand142_oscillator_usd_light.html">Strongest Hand (142-day)</a>
+                    <a class="dropdown-item" target="_blank" href="dcronchain/histogram_probability_oscillators/histogram_probability_oscillators_light.html">Probability Histograms (TVWAP)</a>
                   </div>
                 </li>
 
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DCR: Performance</a>
                   <div class="dropdown-menu" aria-labelledby="dropdown02">
-                    <a class="dropdown-item" href="dcronchain/performance_txvol/performance_txvol_light.html">Onchain Transfer Volume</a>
-                    <a class="dropdown-item" href="dcronchain/txsumadjsply_oscillator_usd/txsumadjsply_oscillator_usd_light.html">Coins Moved Adjusted for Supply</a>
-                    <a class="dropdown-item" href="dcronchain/nvtrvt_oscillator_usd/nvtrvt_oscillator_usd_light.html">NVT and RVT Ratio</a>
-                    <a class="dropdown-item" href="dcronchain/performance_ticketvol/performance_ticketvol_light.html">Ticket Volumes</a>
-                    <a class="dropdown-item" href="dcronchain/performance_privacyvol/performance_privacyvol_light.html">CoinShuffle++ Volumes</a>
-                    <a class="dropdown-item" href="dcronchain/performance_dcrdexvol/performance_dcrdexvol_light.html">DCRDEX Volumes</a>
-                    <a class="dropdown-item" href="dcronchain/valueperbyte_performance_usd/valueperbyte_performance_usd_light.html">Value Stored per byte</a>
-                    <a class="dropdown-item" href="dcronchain/stakingroi_performance_dcr/stakingroi_performance_dcr_light.html">Staking ROI (DCR)</a>
-                    <a class="dropdown-item" href="dcronchain/stakingroi_performance_usd/stakingroi_performance_usd_light.html">Staking ROI (USD)</a>
+                    <a class="dropdown-item" target="_blank" href="dcronchain/performance_txvol/performance_txvol_light.html">Onchain Transfer Volume</a>
+                    <a class="dropdown-item" target="_blank" href="dcronchain/txsumadjsply_oscillator_usd/txsumadjsply_oscillator_usd_light.html">Coins Moved Adjusted for Supply</a>
+                    <a class="dropdown-item" target="_blank" href="dcronchain/nvtrvt_oscillator_usd/nvtrvt_oscillator_usd_light.html">NVT and RVT Ratio</a>
+                    <a class="dropdown-item" target="_blank" href="dcronchain/performance_ticketvol/performance_ticketvol_light.html">Ticket Volumes</a>
+                    <a class="dropdown-item" target="_blank" href="dcronchain/performance_privacyvol/performance_privacyvol_light.html">CoinShuffle++ Volumes</a>
+                    <a class="dropdown-item" target="_blank" href="dcronchain/performance_dcrdexvol/performance_dcrdexvol_light.html">DCRDEX Volumes</a>
+                    <a class="dropdown-item" target="_blank" href="dcronchain/valueperbyte_performance_usd/valueperbyte_performance_usd_light.html">Value Stored per byte</a>
+                    <a class="dropdown-item" target="_blank" href="dcronchain/stakingroi_performance_dcr/stakingroi_performance_dcr_light.html">Staking ROI (DCR)</a>
+                    <a class="dropdown-item" target="_blank" href="dcronchain/stakingroi_performance_usd/stakingroi_performance_usd_light.html">Staking ROI (USD)</a>
                   </div>
                 </li>
 
