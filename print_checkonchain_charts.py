@@ -38,5 +38,9 @@ os.chdir(os.path.dirname(__file__)) #reset dir to this file
 os.chdir('../dcronchain/charts')
 import checkonchain.dcronchain.charts.chart_dcr_useradoption
 
+#STABLECOINS
+os.chdir(os.path.dirname(__file__)) #reset dir to this file
+os.chdir('../stableonchain/charts')
+import checkonchain.stableonchain.charts.stable_charts_plotting
 
 print('CHECKONCHAIN CHART PRODUCTION COMPLETE!') 
