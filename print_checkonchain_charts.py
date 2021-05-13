@@ -23,6 +23,11 @@ os.chdir(os.path.dirname(__file__)) #reset dir to this file
 os.chdir('../altonchain')
 import checkonchain.altonchain.alt_add_metrics
 
+#STABLECOINS
+os.chdir(os.path.dirname(__file__)) #reset dir to this file
+os.chdir('../stableonchain')
+import checkonchain.stableonchain.charts.stable_charts_plotting
+
 #Print Research Paper Charts
 os.chdir(os.path.dirname(__file__)) #reset dir to this file
 os.chdir('../dcronchain/charts')
