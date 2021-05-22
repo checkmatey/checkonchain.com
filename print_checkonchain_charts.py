@@ -43,4 +43,4 @@ os.chdir(os.path.dirname(__file__)) #reset dir to this file
 os.chdir('../stableonchain/charts')
 import checkonchain.stableonchain.charts.stable_charts_plotting
 
-print('CHECKONCHAIN CHART PRODUCTION COMPLETE!') 
+print('CHECKONCHAIN CHART PRODUCTION COMPLETE!')
