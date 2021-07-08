@@ -43,4 +43,14 @@ os.chdir(os.path.dirname(__file__)) #reset dir to this file
 os.chdir('../stableonchain/charts')
 import checkonchain.stableonchain.charts.stable_charts_plotting
 
+
+#Print Last Valid Timestamp
+from checkonchain.btconchain.btc_add_metrics import *
+df = btc_add_metrics().btc_coin()
+i = df.apply(pd.Series.last_valid_index)['date']
+print("")
+print("")
+print("LAST VALID TIMESTAMP")
+print(df.loc[i,'date'])
+
 print('CHECKONCHAIN CHART PRODUCTION COMPLETE!')
