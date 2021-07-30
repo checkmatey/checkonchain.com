@@ -122,6 +122,9 @@
                     <a class="dropdown-item" rel="noopener" target="_blank" href="btconchain/blocksubsidy_pricing_usd/blocksubsidy_pricing_usd_light.html">Block Subsidy Model (Pricing)</a>
                     <a class="dropdown-item" rel="noopener" target="_blank" href="btconchain/puellmultiple_oscillator_usd/puellmultiple_oscillator_usd_light.html">Puell Multiple</a>
                     <a class="dropdown-item" rel="noopener" target="_blank" href="btconchain/miningpulse_oscillator_usd/miningpulse_oscillator_usd_light.html">Mining Pulse</a>
+                    <a class="dropdown-item" rel="noopener" target="_blank" href="btconchain/minerbalance_pricing_usd/minerbalance_pricing_usd_light.html">Miner Balances</a>
+                    <a class="dropdown-item" rel="noopener" target="_blank" href="btconchain/minerflows_pricing_usd/minerflows_pricing_usd_light.html">Miner Flows</a>
+
                   </div>
                 </li>
 
@@ -153,7 +156,7 @@
                     <a class="dropdown-item" rel="noopener" target="_blank" href="btconchain/walletwaves0_pricing_usd/walletwaves0_pricing_usd_light.html">Wallet Waves (Supply)</a>
                     <a class="dropdown-item" rel="noopener" target="_blank" href="btconchain/walletwaves1_pricing_usd/walletwaves1_pricing_usd_light.html">Wallet Waves (%)</a>
                     <a class="dropdown-item" rel="noopener" target="_blank" href="btconchain/exchangeflows_pricing_usd/exchangeflows_pricing_usd_light.html">Exchange Flows</a>
-                    <a class="dropdown-item" rel="noopener" target="_blank" href="btconchain/minerbalance_pricing_usd/minerbalance_pricing_usd_light.html">Miner Balances</a>
+                    <a class="dropdown-item" rel="noopener" target="_blank" href="btconchain/exchangebalance_pricing_usd/exchangebalance_pricing_usd_light.html">Exchange Balance</a>
                   </div>
                 </li>
 
@@ -523,14 +526,19 @@
                   <p><a class="btn btn-secondary" rel="noopener" target="_blank" href="btconchain/miningpulse_oscillator_usd/miningpulse_oscillator_usd_light.html" role="button">View Chart! &raquo;</a></p>
                 </div>
                 <div class="col-md-4">
+                  <h3>Hash-Rate</h3>
+                  <p>Proof-of-Work Mining Hash-rate.</p>
+                  <p><a class="btn btn-secondary" rel="noopener" target="_blank" href="btconchain/performance_hashrate_pricing_usd/performance_hashrate_pricing_usd_light.html" role="button">View Chart! &raquo;</a></p>
+                </div>
+                <div class="col-md-4">
                   <h3>Miner Balances</h3>
                   <p>Miner supply held within 0 or 1 Hop from the coinbase transaction.</p>
                   <p><a class="btn btn-secondary" rel="noopener" target="_blank" href="btconchain/minerbalance_pricing_usd/minerbalance_pricing_usd_light.html" role="button">View Chart! &raquo;</a></p>
                 </div>
                 <div class="col-md-4">
-                  <h3>Hash-Rate</h3>
-                  <p>Proof-of-Work Mining Hash-rate.</p>
-                  <p><a class="btn btn-secondary" rel="noopener" target="_blank" href="btconchain/performance_hashrate_pricing_usd/performance_hashrate_pricing_usd_light.html" role="button">View Chart! &raquo;</a></p>
+                  <h3>Miner Net Flows</h3>
+                  <p>Miner change in net balance compared to rolling 14-day median.</p>
+                  <p><a class="btn btn-secondary" rel="noopener" target="_blank" href="btconchain/minerflows_pricing_usd/minerflows_pricing_usd_light.html" role="button">View Chart! &raquo;</a></p>
                 </div>
             </div>
             <br>
@@ -542,7 +550,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <h3>NVT + RVT Ratios</h3>
-                    <p>Ratio of valuation to on-chain activity.</p>
+                    <p>Ratio of valuation to on-chain activity to assess network utilisation.</p>
                     <p><a class="btn btn-secondary" rel="noopener" target="_blank" href="btconchain/nvtrvt_pricing_usd/nvtrvt_pricing_usd_light.html" role="button">View Chart! &raquo;</a></p>
                 </div>
                 <div class="col-md-4">
@@ -554,21 +562,6 @@
                   <h3>Value Stored per byte</h3>
                   <p>Ratio Market Cap, Realised Cap and Cumulative USD Settled to total Blockchain size. This measures 'value density' of the chain.</p>
                   <p><a class="btn btn-secondary" rel="noopener" target="_blank" href="btconchain/valueperbyte_performance_usd/valueperbyte_performance_usd_light.html" role="button">View Chart! &raquo;</a></p>
-                </div>
-                <div class="col-md-4">
-                  <h3>Metcalfe's Law Models<br>(Valuation)</h3>
-                  <p>Log-Log regression models considered for on-chain activity to estimate 'fair value'. Model considers Transaction Counts, Transaction Volume (USD) and Active Addresses.</p>
-                  <p><a class="btn btn-secondary" rel="noopener" target="_blank" href="btconchain/metcalfemodel_valuation_usd/metcalfemodel_valuation_usd_light.html" role="button">View Chart! &raquo;</a></p>
-                </div>
-                <div class="col-md-4">
-                  <h3>Metcalfe's Law Models<br>(Pricing)</h3>
-                  <p>Metcalfe Law models as per Valuation adjusted by supply to present equivalent pricing levels.</p>
-                  <p><a class="btn btn-secondary" rel="noopener" target="_blank" href="btconchain/metcalefmodel_pricing_usd/metcalefmodel_pricing_usd_light.html" role="button">View Chart! &raquo;</a></p>
-                </div>
-                <div class="col-md-4">
-                  <h3>Exchange Flows and Balance</h3>
-                  <p>Inflows and outflows of BTC for exchanges.</p>
-                  <p><a class="btn btn-secondary" rel="noopener" target="_blank" href="btconchain/exchangeflows_pricing_usd/exchangeflows_pricing_usd_light.html" role="button">View Chart! &raquo;</a></p>
                 </div>
                 <div class="col-md-4">
                   <h3>On-chain Transaction Volumes</h3>
@@ -585,6 +578,19 @@
                   <p>Active On-chain Addresses.</p>
                   <p><a class="btn btn-secondary" rel="noopener" target="_blank" href="btconchain/performance_actaddress_pricing_usd/performance_actaddress_pricing_usd_light.html" role="button">View Chart! &raquo;</a></p>
                 </div>
+                <div class="col-md-4">
+                  <h3>Metcalfe's Law Models<br>(Valuation)</h3>
+                  <p>Log-Log regression models considered for on-chain activity to estimate 'fair value'. Model considers Transaction Counts, Transaction Volume (USD) and Active Addresses.</p>
+                  <p><a class="btn btn-secondary" rel="noopener" target="_blank" href="btconchain/metcalfemodel_valuation_usd/metcalfemodel_valuation_usd_light.html" role="button">View Chart! &raquo;</a></p>
+                </div>
+                <div class="col-md-4">
+                  <h3>Metcalfe's Law Models<br>(Pricing)</h3>
+                  <p>Metcalfe Law models as per Valuation adjusted by supply to present equivalent pricing levels.</p>
+                  <p><a class="btn btn-secondary" rel="noopener" target="_blank" href="btconchain/metcalefmodel_pricing_usd/metcalefmodel_pricing_usd_light.html" role="button">View Chart! &raquo;</a></p>
+                </div>
+                <div class="col-md-4">
+                  
+                </div>
             </div>
             <br>
             <br>
@@ -593,34 +599,6 @@
             <span class="badge badge-warning">Analysis related to Bitcoin Supply, Coin Age and Address wealth distributions</span>
             <hr>
             <div class="row">
-              <div class="col-md-4">
-                <h3>Supply Distribution Bands<br>(% of Supply)</h3>
-                <p>Proportion of circulating supply categorised by address holding volume.</p>
-                <p><a class="btn btn-secondary" rel="noopener" target="_blank" href="btconchain/supplywaves1_pricing_usd/supplywaves1_pricing_usd_light.html" role="button">View Chart! &raquo;</a></p>
-              </div>
-              <div class="col-md-4">
-                <h3>Supply Distribution Bands<br>(Volume)</h3>
-                <p>Coin supply categorised by address holding volume.</p>
-                <p><a class="btn btn-secondary" rel="noopener" target="_blank" href="btconchain/supplywaves0_pricing_usd/supplywaves0_pricing_usd_light.html" role="button">View Chart! &raquo;</a></p>
-              </div>
-              <div class="col-md-4">
-                <h3>Supply Dynamics</h3>
-                <p>Circulating, Free-Float, 1yr Active and Miner Supply.</p>
-                <p><a class="btn btn-secondary" rel="noopener" target="_blank" href="btconchain/supplycurves_pricing_usd/supplycurves_pricing_usd_light.html" role="button">View Chart! &raquo;</a></p>
-              </div>
-              <div class="col-md-4">
-                <h3>HODL Waves <br>(% of Supply)</h3>
-                <p>Proportion of supply categorised by age since last active.</p>
-                <p><a class="btn btn-secondary" rel="noopener" target="_blank" href="btconchain/hodlwaves1_pricing_usd/hodlwaves1_pricing_usd_light.html" role="button">View Chart! &raquo;</a></p>
-              </div>
-              <div class="col-md-4">
-                <h3>HODL Waves<br>(Volume)</h3>
-                <p>Coin supply categorised by age since last active.</p>
-                <p><a class="btn btn-secondary" rel="noopener" target="_blank" href="btconchain/hodlwaves0_pricing_usd/hodlwaves0_pricing_usd_light.html" role="button">View Chart! &raquo;</a></p>
-              </div>
-              <div class="col-md-4">
-            
-              </div>
               <div class="col-md-4">
                 <h3>Coin Maturation (30-day)</h3>
                 <p>30-day Net Position Change metric for the HODL Waves.</p>
@@ -632,23 +610,57 @@
                 <p><a class="btn btn-secondary" rel="noopener" target="_blank" href="btconchain/coinmaturation60SMA_pricing_usd/coinmaturation60SMA_pricing_usd_light.html" role="button">View Chart! &raquo;</a></p>
               </div>
               <div class="col-md-4">
-            
+                <h3>Supply Dynamics</h3>
+                <p>Circulating, Free-Float, 1yr Active and Miner Supply.</p>
+                <p><a class="btn btn-secondary" rel="noopener" target="_blank" href="btconchain/supplycurves_pricing_usd/supplycurves_pricing_usd_light.html" role="button">View Chart! &raquo;</a></p>
               </div>
 
-
+              <div class="col-md-4">
+                <h3>HODL Waves <br>(% of Supply)</h3>
+                <p>Proportion of supply categorised by age since last active.</p>
+                <p><a class="btn btn-secondary" rel="noopener" target="_blank" href="btconchain/hodlwaves1_pricing_usd/hodlwaves1_pricing_usd_light.html" role="button">View Chart! &raquo;</a></p>
+              </div>
+              <div class="col-md-4">
+                <h3>Supply Distribution Bands<br>(% of Supply)</h3>
+                <p>Proportion of circulating supply categorised by address holding volume.</p>
+                <p><a class="btn btn-secondary" rel="noopener" target="_blank" href="btconchain/supplywaves1_pricing_usd/supplywaves1_pricing_usd_light.html" role="button">View Chart! &raquo;</a></p>
+              </div>
               <div class="col-md-4">
                 <h3>Address Count Bands<br>(% of Supply)</h3>
                 <p>Proportion of addresses categorised by DCR coin holdings.</p>
                 <p><a class="btn btn-secondary" rel="noopener" target="_blank" href="btconchain/walletwaves1_pricing_usd/walletwaves1_pricing_usd_light.html" role="button">View Chart! &raquo;</a></p>
+              </div>
+
+              <div class="col-md-4">
+                <h3>HODL Waves<br>(Volume)</h3>
+                <p>Coin supply categorised by age since last active.</p>
+                <p><a class="btn btn-secondary" rel="noopener" target="_blank" href="btconchain/hodlwaves0_pricing_usd/hodlwaves0_pricing_usd_light.html" role="button">View Chart! &raquo;</a></p>
+              </div>
+              <div class="col-md-4">
+                <h3>Supply Distribution Bands<br>(Volume)</h3>
+                <p>Coin supply categorised by address holding volume.</p>
+                <p><a class="btn btn-secondary" rel="noopener" target="_blank" href="btconchain/supplywaves0_pricing_usd/supplywaves0_pricing_usd_light.html" role="button">View Chart! &raquo;</a></p>
               </div>
               <div class="col-md-4">
                 <h3>Address Count Bands<br>(Volume)</h3>
                 <p>Total Address count categorised by coin holdings.</p>
                 <p><a class="btn btn-secondary" rel="noopener" target="_blank" href="btconchain/walletwaves0_pricing_usd/walletwaves0_pricing_usd_light.html" role="button">View Chart! &raquo;</a></p>
               </div>
+
               <div class="col-md-4">
-              
+                <h3>Exchange Balance</h3>
+                <p>Balance of BTC held on exchanges (as estimated by Coinmetrics Community Data).</p>
+                <p><a class="btn btn-secondary" rel="noopener" target="_blank" href="btconchain/exchangebalance_pricing_usd/exchangebalance_pricing_usd_light.html" role="button">View Chart! &raquo;</a></p>
               </div>
+              <div class="col-md-4">
+                <h3>Exchange Flows</h3>
+                <p>Inflows and outflows of BTC out of exchanges (as estimated by Coinmetrics Community Data).</p>
+                <p><a class="btn btn-secondary" rel="noopener" target="_blank" href="btconchain/exchangeflows_pricing_usd/exchangeflows_pricing_usd_light.html" role="button">View Chart! &raquo;</a></p>
+              </div>
+              <div class="col-md-4">
+            
+              </div>
+
             </div>
             <br>
             <br>
