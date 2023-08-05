@@ -73,6 +73,11 @@
                     <a class="dropdown-item" rel="noopener" target="_blank" href="btconchain/adoption/actaddress_momentum/actaddress_momentum_light.html">Active Address Momentum</a>
                     <a class="dropdown-item" rel="noopener" target="_blank" href="btconchain/adoption/txcount_momentum/txcount_momentum_light.html">Transaction Count Momentum</a>          
                     <a class="dropdown-item" rel="noopener" target="_blank" href="btconchain/adoption/exchinflow_momentum/exchinflow_momentum_light.html">Exchange Inflow Momentum</a> 
+                    <a class="dropdown-item" rel="noopener" target="_blank" href="btconchain/adoption/coinblockvaluedestroyed_momentum/coinblockvaluedestroyed_momentum_light.html">Coinday Value Destroyed Momentum</a> 
+                    <a class="dropdown-item" rel="noopener" target="_blank" href="btconchain/adoption/addresscounts/addresscounts_light.html">Address Counts by Cohort</a> 
+                    <a class="dropdown-item" rel="noopener" target="_blank" href="btconchain/adoption/feerevenue_zscore/feerevenue_zscore_light.html">Fee Revenue Z-Score Ribbon</a> 
+                    <a class="dropdown-item" rel="noopener" target="_blank" href="btconchain/adoption/feestotal_btc/feestotal_btc_light.html">Fee Revenue [BTC]</a> 
+                    <a class="dropdown-item" rel="noopener" target="_blank" href="btconchain/adoption/feestotal_usd/feestotal_usd_light.html">Fee Revenue [USD]</a> 
                     <a class="dropdown-item" rel="noopener" target="_blank" href="btconchain/adoption/transfer_volumes_btc/transfer_volumes_btc_light.html">Transfer Volumes [BTC]</a> 
                     <a class="dropdown-item" rel="noopener" target="_blank" href="btconchain/adoption/transfer_volumes_usd/transfer_volumes_usd_light.html">Transfer Volumes [USD]</a>
                     <a class="dropdown-item" rel="noopener" target="_blank" href="btconchain/adoption/utxo_spent_volume_btc/utxo_spent_volume_btc_light.html">UTXO Spent Volume [BTC]</a> 
@@ -180,39 +185,60 @@
                 <div class="row">
                   <div class="col-md-4">
                     <h3>Active Address Momentum</h3>
-                      <p>Momentum within the active Bitcoin userbase.</p>
+                      <p>Momentum within the active addresses as a proxy for the Bitcoin userbase.</p>
                       <p><a class="btn btn-secondary" rel="noopener" target="_blank" href="btconchain/adoption/actaddress_momentum/actaddress_momentum_light.html" role="button">View Chart! &raquo;</a></p>
                   </div>
                   <div class="col-md-4">
-                    <h3>Transaction Count Momentum</h3>
-                      <p>Momentum within the number of confirmed transactions.</p>
+                    <h3>Transaction Momentum</h3>
+                      <p>Momentum within the number of confirmed transactions mined into blocks.</p>
                       <p><a class="btn btn-secondary" rel="noopener" target="_blank" href="btconchain/adoption/txcount_momentum/txcount_momentum_light.html" role="button">View Chart! &raquo;</a></p>
                   </div>
                   <div class="col-md-4">
                     <h3>Transfer Volume Momentum</h3>
-                      <p>Momentum within the volume settled by the Bitcoin network.</p>
+                      <p>Momentum within the volume settled by the Bitcoin network within confirm transactions.</p>
                       <p><a class="btn btn-secondary" rel="noopener" target="_blank" href="btconchain/adoption/exchinflow_momentum/exchinflow_momentum_light.html" role="button">View Chart! &raquo;</a></p>
                   </div>
                 </div>
                 <br>
                 <div class="row">
                   <div class="col-md-4">
-                    <h3>Transfer Volume [BTC]</h3>
-                      <p>Tracking the BTC denominated volume settled by the network.</p>
-                      <p><a class="btn btn-secondary" rel="noopener" target="_blank" href="btconchain/adoption/transfer_volumes_btc/transfer_volumes_btc_light.html" role="button">View Chart! &raquo;</a></p>
+                    <h3>Coinday Value Destroyed Momentum</h3>
+                      <p>Momentum of coinday value destroyed to gauge economic activity.</p>
+                      <p><a class="btn btn-secondary" rel="noopener" target="_blank" href="btconchain/adoption/coinblockvaluedestroyed_momentum/coinblockvaluedestroyed_momentum_light.html" role="button">View chart! &raquo;</a></p>
                   </div>
                   <div class="col-md-4">
-                    <h3>Transfer Volume [USD]</h3>
-                      <p>Tracking the USD denominated volume settled by the network.</p>
-                      <p><a class="btn btn-secondary" rel="noopener" target="_blank" href="btconchain/adoption/transfer_volumes_usd/transfer_volumes_usd_light.html" role="button">View Chart! &raquo;</a></p>
+                    <h3>Miner Fee Revenue</h3>
+                      <p>Analysing the on-chain transaction fees paid to miners.</p>
+                      <p><a class="btn btn-secondary" rel="noopener" target="_blank" href="btconchain/adoption/feestotal_btc/feestotal_btc_light.html" role="button">BTC &raquo;</a>
+                      <a class="btn btn-secondary" rel="noopener" target="_blank" href="btconchain/adoption/feestotal_usd/feestotal_usd_light.html" role="button">USD &raquo;</a></p>
                   </div>
                   <div class="col-md-4">
-                    <h3>UTXOs Created and Destroyed</h3>
-                      <p>Total number of UTXOs created and destroyed each day.</p>
-                      <p><a class="btn btn-secondary" rel="noopener" target="_blank" href="btconchain/adoption/utxo_spent_volume_btc/utxo_spent_volume_btc_light.html" role="button">View Chart! &raquo;</a></p>
+                    <h3>Transfer Volumes</h3>
+                      <p>Tracking the total transfer volume settled by the Bitcoin network.</p>
+                      <p><a class="btn btn-secondary" rel="noopener" target="_blank" href="btconchain/adoption/transfer_volumes_btc/transfer_volumes_btc_light.html" role="button">BTC &raquo;</a>
+                      <a class="btn btn-secondary" rel="noopener" target="_blank" href="btconchain/adoption/transfer_volumes_usd/transfer_volumes_usd_light.html" role="button">USD &raquo;</a></p>
                   </div>
                 </div>
                 <br>
+                <div class="row">
+                  <div class="col-md-4">
+                    <h3>UTXOs Created and Destroyed</h3>
+                      <p>Total number of UTXOs created and destroyed each day.</p>
+                      <p><a class="btn btn-secondary" rel="noopener" target="_blank" href="btconchain/adoption/utxo_spent_volume_btc/utxo_spent_volume_btc_light.html" role="button">BTC &raquo;</a>
+                      <a class="btn btn-secondary" rel="noopener" target="_blank" href="btconchain/adoption/utxo_spent_volume_usd/utxo_spent_volume_usd_light.html" role="button">USD &raquo;</a></p>
+                  </div>
+                  <div class="col-md-4">
+                    <h3>Fee Revenue Ribbon</h3>
+                      <p>Tool to track meaningful upticks in Fee Revenue paid to Miners over 1y to 4yr periods.</p>
+                      <p><a class="btn btn-secondary" rel="noopener" target="_blank" href="btconchain/adoption/feerevenue_zscore/feerevenue_zscore_light.html" role="button">View Chart! &raquo;</a></p>
+                  </div>
+                  <div class="col-md-4">
+                    <h3>Address Count by Cohort</h3>
+                      <p>The total number of Shrimp, Crabs, Fish, Sharks and Whale Addresses.</p>
+                      <p><a class="btn btn-secondary" rel="noopener" target="_blank" href="btconchain/adoption/addresscounts/addresscounts_light.html" role="button">View Chart! &raquo;</a></p>
+                  </div>
+                </div>
+
             </div>
             <hr>
 
