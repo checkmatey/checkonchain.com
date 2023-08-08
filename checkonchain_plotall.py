@@ -7,6 +7,7 @@ from checkonchain_v2.modules.adoption import Adoption
 from checkonchain_v2.modules.cointime import Cointime
 from checkonchain_v2.modules.pricing import Pricing
 from checkonchain_v2.modules.supply import Supply
+from checkonchain_v2.modules.mining import Mining
 from checkonchain_v2.modules.technical import Technical
 
 print('Checkonchain v2 Chart Output Complete!')
