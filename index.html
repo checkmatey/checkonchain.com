@@ -206,13 +206,19 @@
             <a class="dropdown-item" rel="noopener" target="_blank" href="btconchain/cointime/cointime_histogram_mvrv_mvrv_aviv/cointime_histogram_mvrv_mvrv_aviv_light.html">Histogram: AVIV Ratio</a>                    
             <a class="dropdown-item" rel="noopener" target="_blank" href="btconchain/cointime/cointime_histogram_mvrv_mvrv_cointime/cointime_histogram_mvrv_mvrv_cointime_light.html">Histogram: Cointime MVRV</a>                    
             <a class="dropdown-item" rel="noopener" target="_blank" href="btconchain/cointime/cointime_histogram_nvtrvt/cointime_histogram_nvtrvt_light.html">Histogram: Cointime NVT and RVT</a>                    
-            <a class="dropdown-item" rel="noopener" target="_blank" href="btconchain/derivatives/derivatives_btc_spotvolume_cvd/derivatives_btc_spotvolume_cvd_light.html">CVD</a>                    
-            <a class="dropdown-item" rel="noopener" target="_blank" href="btconchain/derivatives/derivatives_futuresoi/derivatives_futuresoi_light.html">OI</a>                    
-            <a class="dropdown-item" rel="noopener" target="_blank" href="btconchain/derivatives/derivatives_futuresoi_1daychange/derivatives_futuresoi_1daychange_light.html">OI (7d)</a>                    
-            <a class="dropdown-item" rel="noopener" target="_blank" href="btconchain/derivatives/derivatives_futures_fundingrate/derivatives_futures_fundingrate_light.html">FR</a>                    
-            <a class="dropdown-item" rel="noopener" target="_blank" href="btconchain/derivatives/derivatives_btc_longliqdominance/derivatives_btc_longliqdominance_light.html">Liq</a>                    
           </div>
       </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Derivatives</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown01">
+          <a class="dropdown-item" rel="noopener" target="_blank" href="btconchain/derivatives/derivatives_futures_fundingrate/derivatives_futures_fundingrate_light.html">Funding Rates</a>                    
+          <a class="dropdown-item" rel="noopener" target="_blank" href="btconchain/derivatives/derivatives_futures_oi_byexchange_0/derivatives_futures_oi_byexchange_0_light.html">Futures Open Interest [USD]</a>                    
+          <a class="dropdown-item" rel="noopener" target="_blank" href="btconchain/derivatives/derivatives_futures_oi_byexchange_1/derivatives_futures_oi_byexchange_1_light.html">Futures Open Interest [BTC]</a>                    
+          <a class="dropdown-item" rel="noopener" target="_blank" href="btconchain/derivatives/derivatives_futuresvolume_byexchange/derivatives_futuresvolume_byexchange_light.html">Futures Volume</a>                    
+          <a class="dropdown-item" rel="noopener" target="_blank" href="btconchain/derivatives/derivatives_btc_longliqdominance/derivatives_btc_longliqdominance_light.html">Long Liquidation Domninance</a>                    
+          <a class="dropdown-item" rel="noopener" target="_blank" href="btconchain/derivatives/derivatives_btc_spotvolume_cvd/derivatives_btc_spotvolume_cvd_light.html">Cumulative Volume Delta</a>                    
+        </div>
+    </li>
     </li>
     <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">BTC vs TradFi</a>
@@ -445,7 +451,7 @@
             <br>
             <div class="container">
               <h1 name="etfs" class="display-6"><img src="webassets/images/btc.png" class="img-rounded" alt="Bitcoin" width="42" height="42"><b>    Bitcoin ETF Metrics</b></h1>            
-              <h5> <span class="badge badge-warning">Metrics covering the suite of US spot Bitcoin ETFs.</span></h5>              <hr style="height:2px;border:none;color:#333;background-color:#333;" />
+              <h5> <span class="badge badge-info">Metrics covering the suite of US spot Bitcoin ETFs.</span></h5>              <hr style="height:2px;border:none;color:#333;background-color:#333;" />
                 <div class="row">
                   <div class="col-md-4">
                     <h3>ETF AUM Balances</h3>
@@ -497,6 +503,40 @@
                       <p>
                         <a class="btn btn-secondary" rel="noopener" target="_blank" href="btconchain/tradfi/tradfi_etf_supplycomparison/tradfi_etf_supplycomparison_light.html" role="button">Market Size &raquo;</a>
                         <a class="btn btn-secondary" rel="noopener" target="_blank" href="btconchain/demand/demand_inflowcomparison_2020-03-12/demand_inflowcomparison_2020-03-12_light.html" role="button">Demand Est &raquo;</a>
+                      </p>
+                  </div>
+                </div>
+                <br>
+            </div>
+            <br>
+            <a name="Derivatives Metrics"></a>
+            <br>
+            <div class="container">
+              <h1 name="etfs" class="display-6"><img src="webassets/images/btc.png" class="img-rounded" alt="Bitcoin" width="42" height="42"><b>    Bitcoin Derivatives</b></h1>            
+              <h5> <span class="badge badge-danger">Metrics detailing the size and scale of futures and options markets.</span></h5>              <hr style="height:2px;border:none;color:#333;background-color:#333;" />
+                <div class="row">
+                  <div class="col-md-4">
+                    <h3>Funding Rates</h3>
+                      <p>The interest rate paid by leveraged traders in futures markets.</p>
+                      <p>
+                        <a class="btn btn-secondary" rel="noopener" target="_blank" href="btconchain/derivatives/derivatives_futures_fundingrate/derivatives_futures_fundingrate_light.html" role="button">View Chart! &raquo;</a>
+                      </p>
+                  </div> 
+                  <div class="col-md-4">
+                    <h3>Futures Open Interest</h3>
+                      <p>The aggregate size of open futures contracts.</p>
+                      <p>
+                        <a class="btn btn-secondary" rel="noopener" target="_blank" href="btconchain/derivatives/derivatives_futures_oi_byexchange_0/derivatives_futures_oi_byexchange_0_light.html" role="button">USD &raquo;</a>
+                        <a class="btn btn-secondary" rel="noopener" target="_blank" href="btconchain/derivatives/derivatives_futures_oi_byexchange_1/derivatives_futures_oi_byexchange_1_light.html" role="button">BTC &raquo;</a>
+                        <a class="btn btn-secondary" rel="noopener" target="_blank" href="btconchain/derivatives/derivatives_futures_oi_0/derivatives_futures_oi_0_light.html" role="button">Dominance &raquo;</a>
+                      </p>
+                  </div>
+                  <div class="col-md-4">
+                    <h3>Futures Volume</h3>
+                      <p>The aggregate daily trade volume in futures markets.</p>
+                      <p>
+                        <a class="btn btn-secondary" rel="noopener" target="_blank" href="btconchain/derivatives/derivatives_futuresvolume_byexchange/derivatives_futuresvolume_byexchange_light.html" role="button">USD &raquo;</a>
+                        <a class="btn btn-secondary" rel="noopener" target="_blank" href="btconchain/derivatives/derivatives_futuresvolume/derivatives_futuresvolume_light.html" role="button">Binance vs CME &raquo;</a>
                       </p>
                   </div>
                 </div>
