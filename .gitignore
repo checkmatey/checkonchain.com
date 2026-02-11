@@ -1,0 +1,12 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# Python junk (if any scripts run inside here)
+__pycache__/
+*.py[cod]
+*.class
+
+# IDE files
+.vscode/
+.idea/
